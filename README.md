@@ -21,7 +21,8 @@ This project will be implemented with the following technologies:
   - D3 library
   - Marine API (https://stormglass.io/)
 
-<img width="1025" alt="Screen Shot 2021-09-03 at 4 44 36 AM" src="https://user-images.githubusercontent.com/76461881/132000111-870c78b8-30ae-4b6c-aec8-75e501016654.png">
+![image](https://user-images.githubusercontent.com/76461881/132000391-b4f59e4a-8a96-46a3-8540-71bb486ed7d7.png)
+
 
 
 Implementation Timeline
