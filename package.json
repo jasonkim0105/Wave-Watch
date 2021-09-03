@@ -1,0 +1,37 @@
+{
+  "name": "wave-watch",
+  "version": "1.0.0",
+  "description": "Proposal.  Background:  Wave watch is a project that helps surfers of all skill level check out the forecast for their favorite surf spot around Santa Cruz and Capitola. Users will be present a map of the bay and given 5 locations that they can choose from.  Upon choosing the location they are interested in, a graph will pop up which presents them with the weather, tide level, and wind intensity associated with the spot. In addition, users will be able to close out the location to bring up information on a second location, allowing them to compare the two.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonkim0105/Wave-Watch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonkim0105/Wave-Watch/issues"
+  },
+  "homepage": "https://github.com/jasonkim0105/Wave-Watch#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.17.2",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.2",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
