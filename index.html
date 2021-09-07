@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
     <script src="./dist/main.js"></script>
-    <title>Project Name</title>
+    <title>Wave-Watch</title>
 </head>
 
 <body>
-</body>
-  <h1>hello Kent
+  <div id="mapid"></div>
 
-  </h1>
+  <h3>
+    <!-- NAV BAR -->
+    <nav class="main-nav">
+      <a href="#" class="logo">Menu</a>
+      <button class="menu-btn">
+        <div class="bar"></div>
+      </button>
+      <ul class="menu-list nav-hidden">
+        <li class="menu-item">
+          <a href="#">Link 1</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Link 2</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </nav>
+  </h3>
+</body>
 </html>
