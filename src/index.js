@@ -1,5 +1,5 @@
 import {APIUtil} from "./APIUtil";
-import {simplemaps_statemap_mapdata} from "./html5statemapv4.1/mapdata.js"
+// import simplemaps_statemap_mapdata from "../html5statemapv4.1/mapdata.js"
 // locationInfo["temp"] = APIInfo.hours[0].airTemperature.noaa;
 // console.log(locationInfo);
 
@@ -12,6 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log(APIInfo[0].airTemperature);
       // }
 
-  }
+    }
+    console.log(simplemaps_statemap_mapdata.locations[0].description)
   });
-  console.log(simplemaps_statemap_mapdata.locations[0].description)

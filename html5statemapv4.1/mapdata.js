@@ -1,4 +1,3 @@
-
 var simplemaps_statemap_mapdata={
   main_settings: {
    //General settings
@@ -298,4 +297,5 @@ var simplemaps_statemap_mapdata={
   regions: {}
 };
 // console.log(simplemaps_statemap_mapdata.locations[0].description)
-export {simplemaps_statemap_mapdata}
+// export {simplemaps_statemap_mapdata as default};
+// module.exports = simplemaps_statemap_mapdata;
