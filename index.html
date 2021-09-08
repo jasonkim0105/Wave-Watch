@@ -15,12 +15,34 @@
     crossorigin=""></script> -->
     <script src="./dist/main.js"></script>
     <script src='https://d3js.org/d3.v4.min.js'></script>
+    <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>US State County-Level Map Example</title> -->
+    <script src="./html5statemapv4.1/mapdata.js"></script>
+    <script src="./html5statemapv4.1/statemap.js"></script>
     <title>Wave-Watch</title>
 </head>
 
 <body>
-  <div id="mapid"></div>
+  <div main>
+    <h2>Santa Cruz Surf Spots</h2>
+  <div class="main-map">
+    <!-- <div class="usmap"> -->
+      <div id="map"></div>
+      <div class="info-box">
+        <ul>
+          <li class="weather">
+            <p> weather: </p>
+          </li>
+          <li class="tide level">
+            <p>tide level: </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
+
+  <div class=bot>
   <h3>
     <!-- NAV BAR -->
     <nav class="main-nav">
@@ -40,6 +62,11 @@
         </li>
       </ul>
     </nav>
+    <div class="options">
+      <a href="#" class="exit">Exit Location</a>
+      <button class="exit-btn"></button>
+    </div>
   </h3>
+</div>
 </body>
 </html>
