@@ -1,3 +1,4 @@
+
 var simplemaps_statemap_mapdata={
   main_settings: {
    //General settings
@@ -5,7 +6,7 @@ var simplemaps_statemap_mapdata={
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
-    
+
     //State defaults
     state_description: "State description",
     state_color: "#88A4BC",
@@ -15,7 +16,7 @@ var simplemaps_statemap_mapdata={
     border_color: "#ffffff",
     all_states_inactive: "yes",
     all_states_zoomable: "no",
-    
+
     //Location defaults
     location_description: "Location description",
     location_color: "#FF0067",
@@ -29,7 +30,7 @@ var simplemaps_statemap_mapdata={
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
-    
+
     //Label defaults
     label_color: "#ffffff",
     label_hover_color: "#ffffff",
@@ -51,7 +52,7 @@ var simplemaps_statemap_mapdata={
     zoom_out_incrementally: "yes",
     zoom_percentage: 0.99,
     zoom_time: 0.5,
-    
+
     //Popup settings
     popup_color: "white",
     popup_opacity: 0.9,
@@ -59,7 +60,7 @@ var simplemaps_statemap_mapdata={
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
-    
+
     //Advanced settings
     div: "map",
     auto_load: "yes",
@@ -259,6 +260,7 @@ var simplemaps_statemap_mapdata={
       lng: -122.02,
       name: "21 Municipal Wharf, Santa Cruz, CA 95060",
       description: "Cowell's Beach"
+
     },
     "1": {
       lat: 36.96,
@@ -295,3 +297,5 @@ var simplemaps_statemap_mapdata={
   },
   regions: {}
 };
+// console.log(simplemaps_statemap_mapdata.locations[0].description)
+export {simplemaps_statemap_mapdata}
