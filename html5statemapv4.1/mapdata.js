@@ -272,6 +272,18 @@ var simplemaps_statemap_mapdata={
       lng: -121.954,
       name: "Capitola",
       description: "Capitola"
+    },
+    "3": {
+      lat: 37.09767,
+      lng: -122.277,
+      name: "Wardell Beach",
+      description: "Wardell Beach"
+    },
+    "4": {
+      lat: 37.01076,
+      lng: -122.19722,
+      name: "Davenport Beach",
+      description: "Davenport Beach"
     }
   },
   labels: {

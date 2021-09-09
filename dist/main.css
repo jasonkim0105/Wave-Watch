@@ -14,3 +14,34 @@
   .bot {
     display: flex;
   }
+
+  body {
+    background-image: url(../img/beach.jpeg);
+    background-size: 100% 100%;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .weather, .tide-level, .water-temp {
+    font-size: 30px;
+  }
+
+  .main-nav {
+    position: relative;
+  }
+
+  h1 {
+    font-size: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 25px;
+  }
