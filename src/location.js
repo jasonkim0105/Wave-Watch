@@ -4,10 +4,10 @@ import {APIUtil} from "./APIUtil";
 class Location {
   constructor(locationInfo) {
 
-    this.name = location["name"];
-    this.temp = location["temp"];
-    this.wave = location["wave"];
-    this.waterTemp = location["waterTemp"];
+    this.name = locationInfo.name;
+    this.temp = locationInfo.temp;
+    this.wave = locationInfo.wave;
+    this.waterTemp = locationInfo.waterTemp;
   }
 
 

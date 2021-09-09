@@ -1,5 +1,5 @@
 class Map {
   constructor() {
-    this.
+    // this.
   }
 }
