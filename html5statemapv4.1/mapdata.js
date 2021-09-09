@@ -8,13 +8,13 @@ var simplemaps_statemap_mapdata={
 
     //State defaults
     state_description: "State description",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
+    state_color: "#ded4af",
+    state_hover_color: "#e0d096",
     state_url: "https://simplemaps.com",
     border_size: 1.5,
     border_color: "#ffffff",
-    all_states_inactive: "yes",
-    all_states_zoomable: "no",
+    all_states_inactive: "no",
+    all_states_zoomable: "yes",
 
     //Location defaults
     location_description: "Location description",
@@ -205,10 +205,7 @@ var simplemaps_statemap_mapdata={
     },
     "06087": {
       name: "Santa Cruz",
-      inactive: "no",
-      zoomable: "yes",
-      color: "red",
-      hover_color: "maroon"
+
     },
     "06089": {
       name: "Shasta"
@@ -284,6 +281,32 @@ var simplemaps_statemap_mapdata={
       lng: -122.19722,
       name: "Davenport Beach",
       description: "Davenport Beach"
+    },
+    "5": {
+      lat: 33.6595,
+      lng: -117.9988,
+      name: "Huntington Beach",
+      description: "Huntington Beach"
+    }, "6": {
+      lat: 32.8907,
+      lng: -117.2535,
+      name: "Black's Beach",
+      description: "Black's Beach"
+    }, "7": {
+      lat: 34.0259,
+      lng: -118.7798,
+      name: "Malibu Beach",
+      description: "Malibu Beach"
+    }, "8": {
+      lat: 34.4079,
+      lng: -119.8790,
+      name: "Isla Vista Beach",
+      description: "Isla Vista Beach"
+    }, "9": {
+      lat: 33.6189,
+      lng: -117.9298,
+      name: "Newport Beach",
+      description: "Newport Beach"
     }
   },
   labels: {

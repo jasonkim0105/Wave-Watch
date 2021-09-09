@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
 
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} ft.`;
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
 
         document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
       });
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
 
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} ft.`;
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
 
         document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
       });
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
 
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} ft.`;
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
 
         document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
       });
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
 
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} ft.`;
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
 
         document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
       });
@@ -110,7 +110,97 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
 
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} ft.`;
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
+
+        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
+      });
+    } else if (location === "sm_location_5") {
+      let locationInfo = {};
+      let APIInfo = APIUtil.huntington();
+      APIUtil.huntington().then(data => {
+        console.log("huntington " ,data)
+        locationInfo["name"] = "Huntington Beach";
+        locationInfo["temp"] = data.airTemperature.noaa;
+        locationInfo["waterTemp"] = data.waterTemperature.meto;
+        locationInfo["wave"] = data.waveHeight.icon;
+
+        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
+
+        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
+
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
+
+        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
+      });
+    } else if (location === "sm_location_6") {
+      let locationInfo = {};
+      let APIInfo = APIUtil.blacksBeach();
+      APIUtil.blacksBeach().then(data => {
+        console.log("Blacks Beach " ,data)
+        locationInfo["name"] = "Black's Beach";
+        locationInfo["temp"] = data.airTemperature.noaa;
+        locationInfo["waterTemp"] = data.waterTemperature.meto;
+        locationInfo["wave"] = data.waveHeight.icon;
+
+        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
+
+        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
+
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
+
+        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
+      });
+    } else if (location === "sm_location_7") {
+      let locationInfo = {};
+      let APIInfo = APIUtil.malibu();
+      APIUtil.malibu().then(data => {
+        console.log("Malibu Beach " ,data)
+        locationInfo["name"] = "Malibu Beach";
+        locationInfo["temp"] = data.airTemperature.noaa;
+        locationInfo["waterTemp"] = data.waterTemperature.meto;
+        locationInfo["wave"] = data.waveHeight.icon;
+
+        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
+
+        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
+
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
+
+        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
+      });
+    } else if (location === "sm_location_8") {
+      let locationInfo = {};
+      let APIInfo = APIUtil.islaVista();
+      APIUtil.islaVista().then(data => {
+        console.log("Isla Vista Beach " ,data)
+        locationInfo["name"] = "Isla Vista Beach";
+        locationInfo["temp"] = data.airTemperature.noaa;
+        locationInfo["waterTemp"] = data.waterTemperature.meto;
+        locationInfo["wave"] = data.waveHeight.icon;
+
+        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
+
+        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
+
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
+
+        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
+      });
+    } else if (location === "sm_location_9") {
+      let locationInfo = {};
+      let APIInfo = APIUtil.newport();
+      APIUtil.newport().then(data => {
+        console.log("Newport Beach " ,data)
+        locationInfo["name"] = "Newport Beach";
+        locationInfo["temp"] = data.airTemperature.noaa;
+        locationInfo["waterTemp"] = data.waterTemperature.meto;
+        locationInfo["wave"] = data.waveHeight.icon;
+
+        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
+
+        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
+
+        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
 
         document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
       });

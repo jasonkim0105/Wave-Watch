@@ -1,47 +1,100 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+  .main-map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   #map {
-    height: 500px;
-    width: 500px;
-    position: static;
+    height: 400px;
+    width: 400px;
+    position: relative;
     display: flex;
   }
 
-  .main-map {
+
+  #info-box {
+    margin: 20px;
+    text-align: left;
     display: flex;
+    align-items: left;
   }
   .bot {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
-  body {
-    background-image: url(../img/beach.jpeg);
-    background-size: 100% 100%;
-  }
+  .background::before {
+    content: "";
+    background-image: url('../img/beach.jpeg');
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+    z-index: -1;
+}
   ul {
     list-style: none;
   }
 
   .name {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 35px;
+    font-family: Helvetica;
+    color: #02053a;
   }
 
   .weather, .tide-level, .water-temp {
     font-size: 30px;
+    font-family: Helvetica;
+    color: #02053a;
+    /* background: url(../img/surfboard.png) no-repeat center;
+    background-size: 200px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .main-nav {
-    position: relative;
-  }
-
-  h1 {
-    font-size: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border: 5px solid black;
-    border-radius: 25px;
+    /* border: 5px solid #02053a; */
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    color: #02053a;
+    /* border-color: #ded4af; */
+  }
+
+  #linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 25px;
+  }
+
+  #github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
   }
