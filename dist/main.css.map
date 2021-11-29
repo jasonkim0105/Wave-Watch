@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,WACE,aACA,Y","sources":["webpack://wave-watch/./src/index.scss"],"sourcesContent":["#mapholder {\n  height: 100px;\n  width: 100px;\n}\n"],"names":[],"sourceRoot":""}

@@ -1,100 +1,140 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-  .main-map {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  #map {
-    height: 400px;
-    width: 400px;
-    position: relative;
-    display: flex;
-  }
-
-
-  #info-box {
-    margin: 20px;
-    text-align: left;
-    display: flex;
-    align-items: left;
-  }
-  .bot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .background::before {
-    content: "";
-    background-image: url('../img/beach.jpeg');
-    background-size: cover;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .7;
-    z-index: -1;
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&family=Shippori+Antique+B1&family=Ubuntu:ital,wght@1,300&display=swap);
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss (1) ***!
+  \*****************************************************************************************************************************************/
+#mapholder {
+  height: 100px;
+  width: 100px;
 }
-  ul {
-    list-style: none;
-  }
 
-  .name {
-    font-weight: bold;
-    font-size: 35px;
-    font-family: Helvetica;
-    color: #02053a;
-  }
+.main-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-  .weather, .tide-level, .water-temp {
-    font-size: 30px;
-    font-family: Helvetica;
-    color: #02053a;
-    /* background: url(../img/surfboard.png) no-repeat center;
-    background-size: 200px; */
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+#map {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: flex;
+}
 
-  .main-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+#info-box {
+  margin: 20px;
+  text-align: left;
+  display: inline-block;
+  align-items: left;
+}
 
-  h1 {
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* border: 5px solid #02053a; */
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: Helvetica;
-    font-weight: bolder;
-    color: #02053a;
-    /* border-color: #ded4af; */
-  }
+.bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-  #linkedin {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25px;
-    width: 25px;
-  }
+.background::before {
+  content: "";
+  background-image: url("../img/beach.jpeg");
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+  z-index: -1;
+}
 
-  #github {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 25px;
-    width: 25px;
-  }
+ul {
+  list-style: none;
+  font-family: "Roboto Slab";
+}
+
+.name {
+  font-weight: bold;
+  font-size: 35px;
+  color: #02053a;
+}
+
+.weather, .tide-level, .water-temp {
+  font-size: 30px;
+  color: #02053a;
+  /* background: url(../img/surfboard.png) no-repeat center;
+  background-size: 200px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#hiddenname {
+  font-weight: bold;
+  font-size: 35px;
+  color: #02053a;
+  display: none;
+}
+
+#weather2, #tide-level2, #water-temp2 {
+  display: none;
+  font-size: 30px;
+  color: #02053a;
+}
+
+#stop {
+  display: none;
+  color: #4d80b3;
+}
+
+.options {
+  display: inline-block;
+  font-family: "Oswald";
+  color: #4d80b3;
+}
+
+.compare:hover {
+  color: #486f97;
+}
+
+.exit:hover {
+  color: #486f97;
+}
+
+#stop:hover {
+  color: #486f97;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 5px solid #02053a; */
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Oswald";
+  color: #ded4af;
+  -webkit-text-stroke: 0.5px black;
+  /* border-color: #ded4af; */
+}
+
+.fab {
+  font-size: 30px;
+  color: #486f97;
+}
+
+.fab:hover {
+  color: black;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

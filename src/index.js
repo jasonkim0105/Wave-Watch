@@ -1,215 +1,30 @@
 import {APIUtil} from "./APIUtil";
 import {Location} from "./location";
-// import "./html5statemapv4.1/statemap";
-// locationInfo["temp"] = APIInfo.hours[0].airTemperature.noaa;
-// console.log(locationInfo);
+import {compareLocation } from './scripts/compare.js'
+import {loadLocationData, exitBtn, toggleCompare} from './scripts/load_location_data'
 let APIInfo = APIUtil.cowellBeach();
-// console.log(APIInfo);
-// console.log(APIInfo[0].airTemperature);
-
+let compareVar = false;
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // console.log("no timeout", locationInfo)
 
-  // setTimeout(() => console.log("timeout",locationInfo), 5000);
-  // const map = document.getElementById("map");
-  // const pickLocation = (e) => {
-  //   e.preventDefault();
-  //   if (loading === true) {
-  //     console.log(cowellBeachInt);
-  //     const cowellBeachInt = new Location(locationInfo);
-  //     console.log(cowellBeachInt);
-  //   }
-  // }
 
-  const loadLocationData = (location) => {
-    if (location === "sm_location_0") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.cowellBeach();
-      APIUtil.cowellBeach().then(data => {
-        console.log("cowell " ,data)
-        locationInfo["name"] = "Cowell Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_1") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.pleasurePoint();
-      APIUtil.pleasurePoint().then(data => {
-        console.log("pleasure point " ,data)
-        locationInfo["name"] = "Pleasure Point";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_2") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.capitola();
-      APIUtil.capitola().then(data => {
-        console.log("capitola " ,data)
-        locationInfo["name"] = "Capitola";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_3") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.wardell();
-      APIUtil.wardell().then(data => {
-        console.log("wardell " ,data)
-        locationInfo["name"] = "Wardell Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_4") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.davenport();
-      APIUtil.davenport().then(data => {
-        console.log("davenport " ,data)
-        locationInfo["name"] = "Davenport Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_5") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.huntington();
-      APIUtil.huntington().then(data => {
-        console.log("huntington " ,data)
-        locationInfo["name"] = "Huntington Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_6") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.blacksBeach();
-      APIUtil.blacksBeach().then(data => {
-        console.log("Blacks Beach " ,data)
-        locationInfo["name"] = "Black's Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_7") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.malibu();
-      APIUtil.malibu().then(data => {
-        console.log("Malibu Beach " ,data)
-        locationInfo["name"] = "Malibu Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_8") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.islaVista();
-      APIUtil.islaVista().then(data => {
-        console.log("Isla Vista Beach " ,data)
-        locationInfo["name"] = "Isla Vista Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    } else if (location === "sm_location_9") {
-      let locationInfo = {};
-      let APIInfo = APIUtil.newport();
-      APIUtil.newport().then(data => {
-        console.log("Newport Beach " ,data)
-        locationInfo["name"] = "Newport Beach";
-        locationInfo["temp"] = data.airTemperature.noaa;
-        locationInfo["waterTemp"] = data.waterTemperature.meto;
-        locationInfo["wave"] = data.waveHeight.icon;
-
-        document.querySelector(".name").innerHTML = `Name: ${locationInfo.name}`;
-
-        document.querySelector(".weather").innerHTML = `Weather: ${locationInfo.temp}°C`;
-
-        document.querySelector(".tide-level").innerHTML = `Tide Level: ${locationInfo.wave} m.`;
-
-        document.querySelector(".water-temp").innerHTML = `Water Temperature: ${locationInfo.waterTemp} °C`;
-      });
-    }
-
-  }
 
   document.body.addEventListener("click", function(e) {
-    loadLocationData(e.target.className.baseVal)
+    loadLocationData(e.target.className.baseVal);
+    exitBtn(e);
+    toggleCompare(e);
+    // compareLocation(e)
+    // if (compareLocation(e)) {
+    //   document.body.removeEventListener("click", loadLocationData)
+    // }
+    // compareVar = false;
+  })
+
+  document.body.addEventListener("click", function(e) {
+    compareLocation(e);
   })
 
 });
+
+export {compareVar}

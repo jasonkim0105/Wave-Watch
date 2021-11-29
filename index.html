@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./dist/reset.css" type="text/css">
     <link rel="stylesheet" href="./dist/main.css" />
 
+    <script src="https://kit.fontawesome.com/059cd153ce.js" crossorigin="anonymous"></script>
+
+
     <script src="./dist/main.js"></script>
     <script src='https://d3js.org/d3.v4.min.js'></script>
     <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -28,7 +31,7 @@
       <div id="info-box">
         <ul>
           <li class="name">
-            Name
+            Name:
           </li>
           <li class="weather">
             Weather:
@@ -40,6 +43,21 @@
             Water Temperature:
           </li>
         </ul>
+
+        <ul>
+          <li id="hiddenname">
+            Name:
+          </li>
+          <li id="weather2">
+            Weather:
+          </li>
+          <li id="tide-level2">
+            Tide Level:
+          </li>
+          <li id="water-temp2">
+            Water Temperature:
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -48,26 +66,26 @@
   <div class=bot>
   <h3>
     <div class="options">
+      <a href="#" class="compare">Compare</a>
+        <!-- <button class="menu-btn"></button> -->
+        <br/>
+        <a href="#" id="stop">Stop Comparison</a>
+          <!-- <button class="stop-btn"></button> -->
       <a href="#" class="exit">Exit Location</a>
-      <button class="exit-btn"></button>
+        <!-- <button class="exit-btn"></button> -->
+
     </div>
     <!-- NAV BAR -->
     <nav class="main-nav">
-      <a href="#" class="logo">Menu</a>
-      <button class="menu-btn">
+
         <div class="bar"></div>
-      </button>
       <ul class="menu-list nav-hidden">
-        <!-- <li class="github"> -->
-          <a href="https://github.com/jasonkim0105">
-            <img id="github" src="https://ctl.s6img.com/society6/img/y-xZ_syD7LhIJOGtpdTU08ra6Aw/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/8e29a2e79387449caa28090d71f489e3/~~/github-logo-prints.jpg" width=10 height=10>
+          <a href="https://github.com/jasonkim0105" target="_blank">
+            <i class="fab fa-github-square"></i>
           </a>
-        <!-- </li> -->
-        <!-- <li class="linkedin"> -->
-          <a href="https://www.linkedin.com/in/jason-kim-0105/">
-            <img id="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png">
+          <a href="https://www.linkedin.com/in/jason-kim-0105/" target="_blank">
+            <i class="fab fa-linkedin"></i>
           </a>
-        <!-- </li> -->
       </ul>
 
     </nav>
