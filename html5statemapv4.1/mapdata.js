@@ -331,6 +331,3 @@ var simplemaps_statemap_mapdata={
   },
   regions: {}
 };
-// console.log(simplemaps_statemap_mapdata.locations[0].description)
-// export {simplemaps_statemap_mapdata as default};
-// module.exports = simplemaps_statemap_mapdata;

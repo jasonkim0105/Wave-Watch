@@ -9,8 +9,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -24,8 +22,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[1])
     });
   }
@@ -39,8 +35,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[2])
     });
   }
@@ -54,8 +48,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -69,8 +61,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -84,8 +74,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -99,8 +87,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -115,8 +101,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -131,8 +115,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[0])
     });
   }
@@ -146,8 +128,6 @@ class APIUtil {
         'Authorization': 'de1c098c-0c43-11ec-bc94-0242ac130002-de1c0a04-0c43-11ec-bc94-0242ac130002'
       }
     }).then((response) => response.json()).then((jsonData) => {
-      // console.log(jsonData);
-      // console.log(jsonData.hours[0]);
       return Promise.resolve(jsonData.hours[5])
     });
   }

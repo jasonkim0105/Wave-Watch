@@ -19,7 +19,6 @@ function loadLocationData(location)  {
       case "sm_location_0":
         let APIInfo = APIUtil.cowellBeach();
         APIUtil.cowellBeach().then(data => {
-        console.log("cowell " ,data)
         locationInfo["name"] = "Cowell Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -38,7 +37,6 @@ function loadLocationData(location)  {
       case "sm_location_1":
         APIInfo = APIUtil.pleasurePoint();
         APIUtil.pleasurePoint().then(data => {
-        console.log("pleasure point " ,data)
         locationInfo["name"] = "Pleasure Point";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -56,7 +54,6 @@ function loadLocationData(location)  {
       case "sm_location_2":
         APIInfo = APIUtil.capitola();
         APIUtil.capitola().then(data => {
-        console.log("capitola " ,data)
         locationInfo["name"] = "Capitola";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -74,7 +71,6 @@ function loadLocationData(location)  {
       case "sm_location_3":
         APIInfo = APIUtil.wardell();
         APIUtil.wardell().then(data => {
-        console.log("wardell " ,data)
         locationInfo["name"] = "Wardell Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -92,7 +88,6 @@ function loadLocationData(location)  {
       case "sm_location_4":
         APIInfo = APIUtil.davenport();
         APIUtil.davenport().then(data => {
-        console.log("davenport " ,data)
         locationInfo["name"] = "Davenport Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -110,7 +105,6 @@ function loadLocationData(location)  {
       case "sm_location_5":
         APIInfo = APIUtil.huntington();
         APIUtil.huntington().then(data => {
-        console.log("huntington " ,data)
         locationInfo["name"] = "Huntington Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -128,7 +122,6 @@ function loadLocationData(location)  {
       case "sm_location_6":
         APIInfo = APIUtil.blacksBeach();
         APIUtil.blacksBeach().then(data => {
-        console.log("Blacks Beach " ,data)
         locationInfo["name"] = "Black's Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -146,7 +139,6 @@ function loadLocationData(location)  {
       case "sm_location_7":
         APIInfo = APIUtil.malibu();
         APIUtil.malibu().then(data => {
-        console.log("Malibu Beach " ,data)
         locationInfo["name"] = "Malibu Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -164,7 +156,6 @@ function loadLocationData(location)  {
       case "sm_location_8":
         APIInfo = APIUtil.islaVista();
         APIUtil.islaVista().then(data => {
-        console.log("Isla Vista Beach " ,data)
         locationInfo["name"] = "Isla Vista Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -182,7 +173,6 @@ function loadLocationData(location)  {
       case "sm_location_9":
         APIInfo = APIUtil.newport();
         APIUtil.newport().then(data => {
-        console.log("Newport Beach " ,data)
         locationInfo["name"] = "Newport Beach";
         locationInfo["temp"] = data.airTemperature.noaa;
         locationInfo["waterTemp"] = data.waterTemperature.meto;
@@ -201,7 +191,6 @@ function loadLocationData(location)  {
         break;
       case "stop":
       default:
-        console.log('hi')
         break;
     }
   }
