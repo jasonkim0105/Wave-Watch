@@ -96,7 +96,7 @@ ul {
 .options {
   display: inline-block;
   font-family: "Oswald";
-  color: #4d80b3;
+  color: #ded4af;
 }
 
 .compare {
@@ -120,14 +120,17 @@ ul {
 
 .compare:hover {
   color: #486f97;
+  background-color: #9e9a9a;
 }
 
 .exit:hover {
   color: #486f97;
+  background-color: #9e9a9a;
 }
 
 #stop:hover {
   color: #486f97;
+  background-color: #9e9a9a;
 }
 
 .main-nav {
