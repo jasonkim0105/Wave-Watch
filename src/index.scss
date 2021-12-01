@@ -13,12 +13,15 @@
   justify-content: space-around;
 }
 #map {
-  height: 400px;
-  width: 400px;
+  height: 40vh;
+  width: 40vh;
   position: relative;
   display: flex;
 }
 
+.top {
+  height: 80vh;
+}
 
 #info-box {
   margin: 20px;
@@ -32,6 +35,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 20vh;
 }
 
 .background::before {
@@ -95,6 +99,31 @@ ul {
   color: rgb(77, 128, 179);
 }
 
+.compare {
+  background: black;
+  padding: 5px;
+  margin-bottom: 1vh;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  border-radius: 5px;
+}
+
+.exit {
+  background: black;
+  padding: 5px;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  border-radius: 5px;
+}
+
+#stop {
+  background: black;
+  padding: 5px;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  border-radius: 5px;
+}
+
 .compare:hover {
   color: rgb(72, 111, 151);
 }
@@ -111,6 +140,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 15px;
 }
 
 h1 {
@@ -131,25 +161,36 @@ h1 {
   /* border-color: #ded4af; */
 }
 
-// #linkedin {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   height: 25px;
-//   width: 25px;
-// }
+.instructions {
+  z-index: -1;
+  padding: 1%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  width: 30%;
+  color: #ded4af;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  right: -50px;
+  margin: 0 auto;
+  margin-bottom: 7vh;
+}
 
-// #github {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   height: 25px;
-//   width: 25px;
-// }
+.instruction-header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  // background-color: white;
+  // width: 30%;
+}
 
-// #map_inner > a {
-//   color: yellow;
-// }
+.actual-instructions {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  // background-color: white;
+  // width: 30%;
+}
 
 .fab {
   font-size: 30px;
