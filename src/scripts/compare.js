@@ -193,6 +193,11 @@ async function compareLocation(e) {
   const tideLevel = document.getElementById('tide-level');
   const waterTemp = document.getElementById('water-temp');
 
+  const compareButtonArray = document.getElementsByClassName("compare");
+  const compareButton = compareButtonArray[0]
+
+  const stopCompareButton = document.getElementById('stop')
+
 
   if (e.target.className === 'compare') {
     name2.style.display = 'block'
@@ -200,6 +205,7 @@ async function compareLocation(e) {
     tideLevel2.style.display = 'block'
     waterTemp2.style.display = 'block'
     stopComparison.style.display = 'block'
+    compareButton.style.display = 'none'
 
     // isCompare = true;
   }
@@ -216,7 +222,14 @@ async function compareLocation(e) {
     waterTemp2.style.display = 'none'
     stopComparison.style.display = 'none'
 
-    // isCompare2 = false;
+    stopCompareButton.style.display = 'none'
+    compareButton.style.display = 'block'
+
+  }
+
+  if (e.target.className === "exit") {
+    compareButton.style.display = 'block'
+
   }
   loadComparisonLocationData(e.target.className.baseVal);
 }

@@ -13,7 +13,7 @@
 .main-map {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #map {
@@ -28,10 +28,21 @@
 }
 
 #info-box {
-  margin: 20px;
-  text-align: left;
+  text-align: center;
   display: inline-block;
   align-items: left;
+  width: 40vh;
+  height: 40vh;
+  background-color: rgba(222, 212, 175, 0.4);
+  padding-top: 1vh;
+}
+
+#info-box > ul {
+  height: 50%;
+}
+
+#info-box > ul > li {
+  height: 25%;
 }
 
 .bot {
@@ -62,30 +73,31 @@ ul {
 
 .name {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 1vw;
   color: #02053a;
 }
 
 .weather, .tide-level, .water-temp {
-  font-size: 30px;
+  font-size: 1vw;
   color: #02053a;
   /* background: url(../img/surfboard.png) no-repeat center;
   background-size: 200px; */
   margin-top: 5px;
   margin-bottom: 5px;
+  color: #4d80b3;
 }
 
 #hiddenname {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 1vw;
   color: #02053a;
   display: none;
 }
 
 #weather2, #tide-level2, #water-temp2 {
   display: none;
-  font-size: 30px;
-  color: #02053a;
+  font-size: 1vw;
+  color: #4d80b3;
 }
 
 #stop {
@@ -102,7 +114,6 @@ ul {
 .compare {
   background: black;
   padding: 5px;
-  margin-bottom: 1vh;
   border-radius: 5px;
 }
 
@@ -149,8 +160,7 @@ h1 {
   text-align: center;
   /* border: 5px solid #02053a; */
   border-radius: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
   font-family: "Oswald";
   color: #ded4af;
   -webkit-text-stroke: 0.5px black;
