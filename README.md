@@ -1,4 +1,7 @@
 # Wave-Watch
+
+## [Wave-Watch Live](https://jasonkim0105.github.io/Wave-Watch/)
+
 Proposal. 
 Background: 
 Wave watch is a project that helps surfers of all skill level check out the forecast for their favorite surf spot around Santa Cruz and Capitola. Users will be present a map of the bay and given 5 locations that they can choose from. 
