@@ -14,11 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadLocationData(e.target.className.baseVal);
     exitBtn(e);
     toggleCompare(e);
-    // compareLocation(e)
-    // if (compareLocation(e)) {
-    //   document.body.removeEventListener("click", loadLocationData)
-    // }
-    // compareVar = false;
   })
 
   document.body.addEventListener("click", function(e) {

@@ -207,7 +207,6 @@ async function compareLocation(e) {
     stopComparison.style.display = 'block'
     compareButton.style.display = 'none'
 
-    // isCompare = true;
   }
 
   if (e.target.id === 'stop') {
